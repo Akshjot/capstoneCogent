@@ -1,0 +1,51 @@
+<div class="main-content">
+  <div class="section-content section-content-p30">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3" *ngFor="let tempProduct of productList">
+          <div class="product-box">
+            <a
+              routerLink="/products/{{ tempProduct.productId }}"
+              *ngIf="tempProduct.productId == 1"
+            >
+              <img src="assets/golfshoes.jpeg" class="img-responsive" />
+            </a>
+            <a
+              routerLink="/products/{{ tempProduct.productId }}"
+              *ngIf="tempProduct.productId == 2"
+            >
+              <img src="assets/trekshoes.jpg" class="img-responsive" />
+            </a>
+            <a
+              routerLink="/products/{{ tempProduct.productId }}"
+              *ngIf="tempProduct.productId == 3"
+            >
+              <img src="assets/gloves.jpg" class="img-responsive" />
+            </a>
+            <a
+              routerLink="/products/{{ tempProduct.productId }}"
+              *ngIf="tempProduct.productId == 4"
+            >
+              <img src="assets/backpack.jpg" class="img-responsive" />
+            </a>
+            <a
+              routerLink="/products/{{ tempProduct.productId }}"
+              *ngIf="tempProduct.productId == 5"
+            >
+              <img src="assets/tent.jpg" class="img-responsive" />
+            </a>
+            <a
+              routerLink="/products/{{ tempProduct.productId }}"
+              *ngIf="tempProduct.productId == 6"
+            >
+              <img src="assets/logs.jpeg" class="img-responsive" />
+            </a>
+            <a routerLink="/products/{{ tempProduct.productId }}">
+              <h1>{{ tempProduct.productName }}</h1>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
